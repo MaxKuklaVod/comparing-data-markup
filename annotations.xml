@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>1</id>
+      <size>14</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2025-06-20 15:12:20.770277+00:00</created>
+      <updated>2025-06-20 15:33:10.409285+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>13</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>1</id>
+          <start>0</start>
+          <stop>13</stop>
+          <url>http://localhost:8080/api/jobs/1</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>copperious</username>
+        <email>copperious@mail.ru</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>Cat</name>
+          <color>#33ddff</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Cats</name>
+          <color>#fa3253</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2025-06-20 15:34:40.219955+00:00</dumped>
+  </meta>
+  <image id="0" name="pexels-arina-krasnikova-7726103.jpg" width="2670" height="4000">
+    <box label="Cat" source="manual" occluded="0" xtl="1283.09" ytl="1673.70" xbr="2260.86" ybr="3619.88" z_order="0">
+    </box>
+    <box label="Cat" source="manual" occluded="0" xtl="700.37" ytl="1210.00" xbr="1465.80" ybr="2943.33" z_order="0">
+    </box>
+    <box label="Cats" source="manual" occluded="0" xtl="705.31" ytl="1205.06" xbr="2275.68" ybr="3629.75" z_order="0">
+    </box>
+  </image>
+  <image id="1" name="pexels-bekka419-21802.jpg" width="3000" height="2400">
+    <box label="Cat" source="manual" occluded="0" xtl="1451.18" ytl="1045.85" xbr="3000.00" ybr="2355.48" z_order="0">
+    </box>
+  </image>
+  <image id="2" name="pexels-david-bartus-43782-1510543.jpg" width="5819" height="4364">
+    <box label="Cat" source="manual" occluded="0" xtl="2392.20" ytl="58.81" xbr="3383.53" ybr="3997.72" z_order="0">
+    </box>
+  </image>
+  <image id="3" name="pexels-fox-58267-1265617.jpg" width="6000" height="4000">
+    <box label="Cats" source="manual" occluded="0" xtl="1901.36" ytl="829.26" xbr="6000.00" ybr="3812.47" z_order="0">
+    </box>
+    <box label="Cat" source="manual" occluded="0" xtl="1906.30" ytl="1614.44" xbr="3377.90" ybr="2908.77" z_order="0">
+    </box>
+    <box label="Cat" source="manual" occluded="0" xtl="3135.93" ytl="834.20" xbr="6000.00" ybr="3812.47" z_order="0">
+    </box>
+  </image>
+  <image id="4" name="pexels-fox-58267-762986.jpg" width="3606" height="5409">
+    <box label="Cat" source="manual" occluded="0" xtl="1185.18" ytl="951.46" xbr="2754.46" ybr="4704.37" z_order="0">
+    </box>
+  </image>
+  <image id="5" name="pexels-francesco-ungaro-96399.jpg" width="4896" height="3264">
+    <box label="Cats" source="manual" occluded="0" xtl="729.56" ytl="543.80" xbr="4203.10" ybr="2820.94" z_order="0">
+    </box>
+    <box label="Cat" source="manual" occluded="0" xtl="2599.31" ytl="1087.80" xbr="4199.07" ybr="2486.48" z_order="0">
+    </box>
+    <box label="Cat" source="manual" occluded="0" xtl="729.56" ytl="539.77" xbr="2075.46" ybr="2820.94" z_order="0">
+    </box>
+  </image>
+  <image id="6" name="pexels-george-desipris-792381.jpg" width="3047" height="2362">
+    <box label="Cat" source="manual" occluded="0" xtl="674.82" ytl="113.48" xbr="3047.00" ybr="2309.55" z_order="0">
+    </box>
+  </image>
+  <image id="7" name="pexels-helenalopes-1931370.jpg" width="5170" height="3447">
+    <box label="Cat" source="manual" occluded="0" xtl="1059.41" ytl="440.23" xbr="2587.16" ybr="2623.75" z_order="0">
+    </box>
+  </image>
+  <image id="8" name="pexels-minan1398-1003996.jpg" width="4170" height="2635">
+    <box label="Cats" source="manual" occluded="0" xtl="0.00" ytl="515.56" xbr="2688.30" ybr="2633.32" z_order="0">
+    </box>
+    <box label="Cat" source="manual" occluded="0" xtl="0.00" ytl="720.51" xbr="1452.13" ybr="2457.66" z_order="0">
+    </box>
+    <box label="Cat" source="manual" occluded="0" xtl="1608.27" ytl="515.56" xbr="2688.30" ybr="2635.00" z_order="0">
+    </box>
+  </image>
+  <image id="9" name="pexels-pixabay-160755.jpg" width="6581" height="4402">
+    <box label="Cats" source="manual" occluded="0" xtl="209.18" ytl="923.82" xbr="6393.71" ybr="4157.39" z_order="0">
+    </box>
+    <box label="Cat" source="manual" occluded="0" xtl="214.61" ytl="929.26" xbr="4045.98" ybr="3608.50" z_order="0">
+    </box>
+    <box label="Cat" source="manual" occluded="0" xtl="3540.02" ytl="1467.28" xbr="6388.28" ybr="4141.09" z_order="0">
+    </box>
+  </image>
+  <image id="10" name="pexels-thatguycraig000-1674723.jpg" width="5472" height="3648">
+    <box label="Cat" source="manual" occluded="0" xtl="1909.58" ytl="1071.44" xbr="3409.31" ybr="2459.03" z_order="0">
+    </box>
+  </image>
+  <image id="11" name="pexels-tranmautritam-2188791.jpg" width="3504" height="5256">
+    <box label="Cat" source="manual" occluded="0" xtl="1320.75" ytl="1739.28" xbr="2884.57" ybr="5256.00" z_order="0">
+    </box>
+  </image>
+  <image id="12" name="pexels-tranmautritam-2194261.jpg" width="4899" height="3266">
+    <box label="Cat" source="manual" occluded="0" xtl="864.69" ytl="600.59" xbr="2779.94" ybr="2979.53" z_order="0">
+    </box>
+  </image>
+  <image id="13" name="pexels-vladbagacian-1634838.jpg" width="3456" height="5184">
+    <box label="Cat" source="manual" occluded="0" xtl="1321.68" ytl="2528.08" xbr="3043.28" ybr="3859.28" z_order="0">
+    </box>
+  </image>
+</annotations>
