@@ -102,8 +102,11 @@ for task_index, task in enumerate(tasks):
                         label_text = ", ".join(labels)
                         color = (0, 255, 0) 
                         
-                        if any(l.lower() == "cat" for l in labels) or any(l.lower() == "cats" for l in labels):
+                        if any(l.lower() == "cat" for l in labels):
                             color = (255, 0, 0) 
+                        
+                        elif any(l.lower() == "cats" for l in labels):
+                            color = (0, 0, 255) 
                         
                         print(f"    Рисуем рамку на display_image: {label_text} at [{x1},{y1},{w},{h}] (относительно оригинала)")
                         cv2.rectangle(display_image, (x1, y1), (x2, y2), color, 2) 
