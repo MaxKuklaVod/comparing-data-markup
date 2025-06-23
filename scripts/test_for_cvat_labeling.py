@@ -1,5 +1,5 @@
 import xml.etree.ElementTree as ET
-from PIL import Image, ImageDraw, ImageFont # Добавили ImageFont
+from PIL import Image, ImageDraw, ImageFont
 import os
 import hashlib # Для получения стабильного цвета для метки
 
@@ -38,7 +38,6 @@ def visualize_annotations(xml_file_path, images_dir_path, output_dir_path):
         return
 
     # --- Настройка цветов и шрифта ---
-    # Список доступных цветов (можно расширить или использовать RGB кортежи)
     # (Red, Green, Blue, Yellow, Purple, Orange, Cyan, Magenta, Lime, Pink, Teal, Lavender, Brown, Beige, Maroon, Olive)
     available_colors = [
         (255, 0, 0), (0, 128, 0), (0, 0, 255), (255, 255, 0), (128, 0, 128),
@@ -48,15 +47,10 @@ def visualize_annotations(xml_file_path, images_dir_path, output_dir_path):
     
     font_size = 60
     try:
-        # Попытка загрузить шрифт. Укажите путь к .ttf файлу, если он не в системных путях.
-        # "arial.ttf" обычно есть в Windows. Для Linux/Mac можно использовать "DejaVuSans.ttf"
-        # или любой другой шрифт, положив файл .ttf рядом со скриптом.
         font = ImageFont.truetype("arial.ttf", font_size)
     except IOError:
         print(f"Font 'arial.ttf' not found. Using default PIL font (อาจดูไม่สวยงาม).")
-        font = ImageFont.load_default() # Используем шрифт по умолчанию, если Arial не найден
-        # Для корректного расчета высоты текста с дефолтным шрифтом, установим font_size вручную, если нужно
-        # Но лучше обеспечить наличие .ttf файла.
+        font = ImageFont.load_default()
 
     for image_tag in root.findall('image'):
         image_id = image_tag.get('id')
@@ -100,10 +94,6 @@ def visualize_annotations(xml_file_path, images_dir_path, output_dir_path):
             
             text_x_position = xtl + 4
 
-            # Опционально: можно добавить фон для текста для лучшей читаемости
-            # text_bbox = draw.textbbox((text_x_position, text_y_position), label, font=font)
-            # draw.rectangle(text_bbox, fill=(255,255,255,180)) # Белый полупрозрачный фон
-
             try:
                 draw.text((text_x_position, text_y_position), label, fill=box_color, font=font)
             except Exception as e:
@@ -121,22 +111,13 @@ def visualize_annotations(xml_file_path, images_dir_path, output_dir_path):
 if __name__ == "__main__":
     
     # --- НАСТРОЙКИ ---
-    # Путь к директории, куда вы распаковали архив CVAT
-    # (здесь должен быть annotations.xml и папка images, если вы экспортировали с картинками)
-    cvat_export_dir = "./"  # <--- ИЗМЕНИ ЭТОТ ПУТЬ, ЕСЛИ НЕОБХОДИМО
-                            # Например: "C:/Users/YourUser/Downloads/cvat_export_folder"
-                            # или "/home/youruser/cvat_exports/my_task_export"
+    cvat_export_dir = "./"  
 
     xml_file = os.path.join(cvat_export_dir, "annotations.xml")
     
-    # Путь к папке с изображениями.
-    # Если изображения экспортировались вместе с аннотациями, они обычно лежат в папке 'images'
-    # внутри распакованного архива. Если нет, укажи путь к твоим оригинальным изображениям.
     images_folder = os.path.join(cvat_export_dir, "images") 
-    # Если оригинальные изображения в другой папке:
-    # images_folder = "path/to/your/original/cat_images_folder" # <--- ИЛИ ИЗМЕНИ ЭТОТ ПУТЬ
 
-    output_folder = os.path.join(cvat_export_dir, "visualized_annotations_color") # Изменил имя папки вывода
+    output_folder = os.path.join(cvat_export_dir, "visualized_annotations_color")
     # --- КОНЕЦ НАСТРОЕК ---
 
     if not os.path.isdir(cvat_export_dir):
